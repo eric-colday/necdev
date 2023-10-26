@@ -1,0 +1,77 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding-top: 10rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px #333;
+  width: 425px;
+  height: 350px;
+}
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  animation: move 4s infinite ease alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.h22 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.li {
+  display: flex;
+  gap: 10px;
+}
+
+.clickInput {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footerList {
+  display: flex;
+  gap: 10px;
+}
+
+.footerListItems {
+  display: flex;
+  gap: 10px;
+}
