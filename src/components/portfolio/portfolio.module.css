@@ -53,7 +53,7 @@
 }
 
 .img:hover {
-  transform: translateY(-86%);
+  transform: translateY(-73%);
 }
 
 .textContainer {
@@ -115,3 +115,5 @@
     font-size: 16px;
   }
 }
+
+

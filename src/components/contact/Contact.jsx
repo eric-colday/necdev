@@ -9,6 +9,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
 import Link from "next/link";
 
 const textVariants = {
@@ -46,12 +47,17 @@ const Contact = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <motion.img
+          {/* <motion.img
             src="img/shake.svg"
             alt="image de contact"
             className={styles.img}
             variants={textVariants}
             style={{ filter: mode === "dark" ? "invert(1)" : "invert(0)" }}
+          /> */}
+          <Lottie
+            animationData={require("/public/img/animation_lo8heyow.json")}
+            loop={true}
+            className={styles.img}
           />
         </motion.div>
         <motion.div

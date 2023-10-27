@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./about.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Lottie from "lottie-react";
 
 const textVariants = {
   initial: {
