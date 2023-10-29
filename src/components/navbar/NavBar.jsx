@@ -13,22 +13,22 @@ const links = [
   {
     id: 1,
     title: "Accueil",
-    url: "/#accueil",
+    url: "#accueil",
   },
   {
     id: 2,
     title: "A propos",
-    url: "/#a-propos",
+    url: "#a-propos",
   },
   {
     id: 3,
     title: "Projets",
-    url: "/#projets",
+    url: "#projets",
   },
   {
     id: 4,
     title: "Contact",
-    url: "/#contact",
+    url: "#contact",
   },
 ];
 
@@ -58,7 +58,7 @@ const NavBar = () => {
             }
       }
     >
-      <Link href="/#accueil" className={styles.logo}>
+      <Link href="#accueil" className={styles.logo}>
         NecDev
       </Link>
       <DarkModeToggle />

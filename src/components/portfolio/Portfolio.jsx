@@ -32,64 +32,14 @@ const items = [
   },
 ];
 
-const Single = ({ item }) => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
-
-  return (
-    <section>
-      <div className={styles.container}>
-        <div className={styles.wrapper}>
-          <div className={styles.imageContainer} ref={ref}>
-            <Image
-              src={item.img}
-              alt=""
-              width={200}
-              height={200}
-              className={styles.img}
-            />
-          </div>
-          <motion.div className={styles.textContainer} style={{ y }}>
-            <h2 className={styles.h2}>{item.title}</h2>
-            <p className={styles.p}>{item.desc}</p>
-            <button className={styles.button}>See Demo</button>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const Portfolio = () => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
-  });
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-  });
 
   return (
-    <div className={styles.portfolio} ref={ref}>
+    <div className={styles.portfolio}>
       <div className={styles.progress}>
         <h1>Projets réalisés</h1>
-        <motion.div
-          style={{ scaleX }}
-          className={styles.progressBar}
-        ></motion.div>
-      </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+        </div>
     </div>
   );
 };
