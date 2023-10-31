@@ -1,3 +1,10 @@
+:root {
+  --bg: white;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,7 +41,7 @@ a {
 }
 
 .dark {
-  background-color: #111;
+  background-color: #0f172a;
   color: #bbb;
 }
 

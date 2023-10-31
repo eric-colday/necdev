@@ -3,11 +3,12 @@
 import Link from "next/link";
 import React, { useContext, useState } from "react";
 import styles from "./navbar.module.css";
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { ThemeContext } from "../../context/ThemeContext.js";
 import { motion } from "framer-motion";
+import ThemeToggle from "../themeToggle/ThemeToggle";
+import { ThemeContext } from "@/context/ThemeContext";
+import Image from "next/image";
 
 const links = [
   {
@@ -38,7 +39,7 @@ const variants = {
 };
 
 const NavBar = () => {
-  const { mode } = useContext(ThemeContext);
+  const { toggle, theme } = useContext(ThemeContext);
   const [showLinks, setShowLinks] = useState(false);
 
   const handleShowLinks = () => {
@@ -49,19 +50,15 @@ const NavBar = () => {
     <nav
       className={styles.container}
       style={
-        mode === "dark"
-          ? {
-              backgroundColor: " #111",
-            }
-          : {
-              backgroundColor: "white",
-            }
+        theme === "dark"
+          ? { backgroundColor: "#0f172a" }
+          : { backgroundColor: "white" }
       }
     >
       <Link href="#accueil" className={styles.logo}>
         NecDev
       </Link>
-      <DarkModeToggle />
+      <ThemeToggle />
       {showLinks ? (
         <CloseIcon
           onClick={handleShowLinks}
@@ -69,22 +66,25 @@ const NavBar = () => {
           variants={variants}
         />
       ) : (
-        <MenuIcon
+        <Image
+          src="/burger.svg"
+          alt="menu"
+          width={30}
+          height={30}
           className={showLinks ? styles.hiddenBurger : styles.burger}
           onClick={handleShowLinks}
+          style={
+            theme === "dark" ? { filter: "invert(1)" } : { filter: "invert(0)" }
+          }
         />
       )}
 
       <div
         className={showLinks ? styles.linksContainer : styles.links}
         style={
-          mode === "dark"
-            ? {
-                backgroundColor: " #111",
-              }
-            : {
-                backgroundColor: "white",
-              }
+          theme === "dark"
+            ? { backgroundColor: "#0f172a" }
+            : { backgroundColor: "white" }
         }
       >
         {links.map((link) => (

@@ -1,5 +1,6 @@
 import NavBar from "@/components/navbar/NavBar";
-import { ThemeProvider } from "@/context/ThemeContext";
+import { ThemeContextProvider } from "@/context/ThemeContext";
+import ThemeProvider from "@/providers/ThemeProvider";
 import { inter, yeseva_One } from "@/fonts/fonts";
 import "./globals.css";
 
@@ -13,14 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <ThemeProvider>
-          <main className="container">
-            <div className="header">
-              <NavBar />
-            </div>
-            {children}
-          </main>
-        </ThemeProvider>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <main className="container">
+              <div className="header">
+                <NavBar />
+              </div>
+              {children}
+            </main>
+          </ThemeProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
