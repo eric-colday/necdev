@@ -1,0 +1,120 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading_3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Depth"
+						}
+					}
+				]
+			},
+			"heading_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Character"
+						}
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolor duis proident irure nulla dolor mollit. Elit velit fugiat id aliquip deserunt esse ipsum labore ex. Aute veniam voluptate est excepteur qui occaecat nulla ut."
+						}
+					}
+				]
+			},
+			"heading_3b": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Imagine"
+						}
+					}
+				]
+			},
+			"paragraph_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laboris dolore ex nulla non. Ut quis ad nostrud aute quis aliqua sint magna ut nostrud consectetur."
+						}
+					}
+				]
+			},
+			"heading_3c": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Potatoes"
+						}
+					}
+				]
+			},
+			"paragraph_3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sint ad reprehenderit irure. Ullamco est officia anim sunt Lorem do sunt."
+						}
+					}
+				]
+			},
+			"heading_3d": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Stronger"
+						}
+					}
+				]
+			},
+			"paragraph_4": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum nulla nisi Lorem eu nulla eu minim officia."
+						}
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "section",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

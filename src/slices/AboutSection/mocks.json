@@ -1,0 +1,118 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+					"width": 4000,
+					"height": 6000
+				},
+				"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+				"width": 4000,
+				"height": 6000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Sunt do pariatur reprehenderit ut magna aliqua. Dolor irure velit cillum aute laboris sit consectetur."
+						}
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo veniam deserunt voluptate et sint quis adipisicing dolore officia voluptate est. Ad est ut sint est incididunt amet."
+						}
+					}
+				]
+			},
+			"heading_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi voluptate ipsum duis dolore commodo fugiat enim laboris consequat. Exercitation mollit laborum adipisicing anim ex minim. Do magna eiusmod cupidatat veniam eu est id laborum."
+						}
+					}
+				]
+			},
+			"paragraph_2": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim deserunt quis elit duis occaecat ut veniam laborum excepteur id eiusmod aliqua qui non duis."
+						}
+					}
+				]
+			},
+			"heading_3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Dolor sit non duis eiusmod nisi cupidatat aliqua enim enim aliqua sunt adipisicing amet. Aute mollit magna aliqua ullamco pariatur est elit id mollit nostrud est exercitation ex est ad. Eiusmod pariatur Lorem aliqua dolore pariatur ipsum."
+						}
+					}
+				]
+			},
+			"paragraph_3": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laboris sunt cupidatat sunt velit aliquip consequat aute nostrud. Mollit nostrud reprehenderit occaecat Lorem magna eiusmod velit. Enim aliqua velit mollit enim irure in veniam exercitation deserunt veniam dolore."
+						}
+					}
+				]
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "growth",
+				"type": "Text"
+			},
+			"button_text_2": {
+				"__TYPE__": "FieldContent",
+				"value": "rabbit",
+				"type": "Text"
+			},
+			"button_text_3": {
+				"__TYPE__": "FieldContent",
+				"value": "hall",
+				"type": "Text"
+			},
+			"button_text_4": {
+				"__TYPE__": "FieldContent",
+				"value": "hit",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
