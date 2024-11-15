@@ -108,7 +108,7 @@ const HomeSection = ({ slice }: HomeSectionProps): JSX.Element => {
           <div className="h-full w-1/2 max-[768px]:w-auto max-[768px]:items-center max-[768px]:text-center flex flex-col gap-8 justify-center">
             {/* TITLE */}
             <div>
-              <h1 className="text-4xl  md:text-6xl font-bold">
+              <h1 className="text-4xl text-white  md:text-6xl font-bold">
                 Eric Colday Noubissi
               </h1>
               <h2 className="text-4xl md:text-5xl font-bold">
