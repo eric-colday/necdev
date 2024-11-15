@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
@@ -48,11 +47,6 @@ const ProjetSection = ({ slice }: ProjetSectionProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div
-        // style={
-        //   theme === "dark"
-        //     ? { backgroundColor: "#0f172a" }
-        //     : { backgroundColor: "#F4FAFF" }
-        // }
         className="px-20 py-40 max-[768px]:px-5"
       >
 
