@@ -30,9 +30,6 @@
 }
 
 html {
-  /* max-width: 100vw; */
-  /* overflow-x: hidden; */
-  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 }
 
@@ -53,11 +50,6 @@ a {
   text-decoration: none;
 }
 
-
-.light {
-  background-color: #fbfdff;
-  color: #7c8587;
-}
 
 
 
