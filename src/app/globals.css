@@ -53,19 +53,12 @@ a {
   text-decoration: none;
 }
 
-.theme {
-  transition: 1s all ease;
-}
 
 .light {
   background-color: #fbfdff;
   color: #7c8587;
 }
 
-.dark {
-  background-color: #0d1520;
-  color:  #7c8587;
-}
 
 
 
