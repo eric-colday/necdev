@@ -1,9 +1,7 @@
 "use client";
-import Image from "next/image";
 import React, { useContext, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import { PrismicNextLink } from "@prismicio/next";
-import { ThemeContext } from "@/context/ThemeContext";
 
 function ButtonsToggle({ settings }) {
   const [showLinks, setShowLinks] = useState(false);
@@ -14,31 +12,6 @@ function ButtonsToggle({ settings }) {
   };
   return (
     <div>
-      {/* {showLinks ? (
-        <CloseIcon
-          onClick={handleShowLinks}
-          className={
-            showLinks
-              ? "cursor-pointer z-[100] text-white text-[30px] max-[768px]:cursor-pointer max-[768px]:z-[100] "
-              : "hidden"
-          }
-          size={40}
-        />
-      ) : (
-        <Image
-          src="/burger.svg"
-          alt="menu"
-          width={30}
-          height={30}
-          className={
-            showLinks
-              ? " max-[768px]:hidden"
-              : "hidden max-[768px]:block max-[768px]:text-[30px] max-[768px]:cursor-pointer max-[768px]:text-[#468bff]  "
-          }
-          onClick={handleShowLinks}
-          style={{ filter: "invert(1)" }}
-        />
-      )} */}
       <div
         className={
           showLinks

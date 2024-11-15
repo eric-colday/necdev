@@ -3,13 +3,9 @@ import Navbar from "@/components/Navbar";
 // import { GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { ThemeContextProvider } from "@/context/ThemeContext";
-import ThemeProvider from "@/providers/ThemeProvider";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { createClient } from "@/prismicio";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import TransitionProvider from "@/components/transitionProvider";
 
 const inter = Inter({
