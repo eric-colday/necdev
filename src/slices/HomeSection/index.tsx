@@ -108,11 +108,11 @@ const HomeSection = ({ slice }: HomeSectionProps): JSX.Element => {
           <div className="h-full w-1/2 max-[768px]:w-auto max-[768px]:items-center max-[768px]:text-center flex flex-col gap-8 justify-center">
             {/* TITLE */}
             <div>
-              <h1 className="text-4xl text-white  md:text-6xl font-bold">
+              <h1 className="mb-2 text-4xl text-white  md:text-6xl font-bold">
                 Eric Colday Noubissi
               </h1>
               <h2 className="text-4xl md:text-5xl font-bold">
-                Chef de projet acquisition
+                Consultant SEO, SEA et Data
               </h2>
             </div>
             {/* DESC */}
@@ -120,6 +120,68 @@ const HomeSection = ({ slice }: HomeSectionProps): JSX.Element => {
               Découvrez mon univers digital, où SEO, SEA et développement web façonnent des stratégies sur mesure.
               Alliant créativité et expertise technique, je m’engage à concevoir des projets uniques qui maximisent la visibilité en ligne et reflètent l’excellence pour chaque client.
             </p>
+            {/* SKILLS CONTAINER */}
+            <div className="flex flex-col gap-4 justify-center ">
+              {/* SKILL TITLE */}
+              <h1
+                className="font-bold text-2xl"
+              >
+                Certifications
+              </h1>
+              {/* SKILL LIST */}
+              <div
+                // initial={{ x: "-300px" }}
+                className="flex gap-4 flex-wrap max-[768px]:items-center max-[768px]:justify-center max-[768px]:gap-2"
+              >
+                <Link href="https://www.credly.com/badges/b7f1a0f4-6372-46ac-90d0-032b1334ac13"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  AgilePM® Foundation
+                </Link>
+                <Link
+                  href="https://static.semrush.com/academy/certificates/b25f11af51/eric-colday-noubissi_25.pdf"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  SEMRush
+                </Link>
+                <Link
+                  href="https://skillshop.credential.net/0b5b4d68-155f-4a3c-9a93-155cda833d38#acc.BQ4g72Sy"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  Google ads
+                </Link>
+                <Link
+                  href="https://skillshop.credential.net/88ccdfc1-2334-41f0-99fc-164ce8523fbb#acc.zAcFTaUs"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  Google Analytics 4
+                </Link>
+                <Link
+                  href="/Certificat.pdf"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  Google Tag Manager
+                </Link>
+                <Link
+                  href="https://www.credly.com/badges/b5afaf98-2382-4f37-945e-a9ea2f92f6ae/linked_in_profile"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  Meta Certified
+                </Link>
+                <Link
+                  href="https://verify.skilljar.com/c/voxhma4weyjk"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  LinkedIn ads
+                </Link>
+                <Link
+                  href="https://app.hubspot.com/academy/achievements/bxlmtbcj/fr/1/eric-colday-noubissi/inbound"
+                  target="_blank" rel="noopener noreferrer"
+                  className="rounded  p-2 text-sm cursor-pointer bg-[#0D1520] text-white hover:bg-white hover:text-[#0D1520]">
+                  Hubspot
+                </Link>
+              </div>
+            </div>
             {/* BUTTONS */}
             <div className="w-full flex max-[768px]:justify-center gap-4">
               <Link
@@ -155,111 +217,6 @@ const HomeSection = ({ slice }: HomeSectionProps): JSX.Element => {
               </Link>
             </div>
           </div>
-          {/* <div className="flex flex-col justify-center max-[768px]:items-center  ">
-            <PrismicRichText field={slice.primary.paragraph}
-              components={{
-                paragraph: ({ children }) => <motion.span
-                  // variants={fadeInAnimationsVariants2}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{
-                    once: true,
-                  }}
-                  className="text-[22px] text-[#7c8587] "
-                >
-                  {children}
-                </motion.span>,
-              }}
-            />
-            <PrismicRichText field={slice.primary.heading_1}
-              components={{
-                heading1: ({ children }) => <motion.h1
-                  // variants={fadeInAnimationsVariants2}
-                  initial="initial"
-                  // animate={controls}
-                  whileInView="animate"
-                  viewport={{
-                    once: true,
-                  }}
-                  className="text-[40px] text-white max-[469px]:text-[28px] "
-                >
-                  {children}
-                </motion.h1>,
-              }}
-            />
-            <PrismicRichText field={slice.primary.heading_2}
-              components={{
-                heading2: ({ children }) => <motion.h2
-                  // variants={fadeInAnimationsVariants2}
-                  initial="initial"
-                  // animate={controls}
-                  whileInView="animate"
-                  viewport={{
-                    once: true,
-                  }}
-                  className="text-[45px] font-bold text-[#468bff] max-[768px]:text-center max-[425px]:text-[25px] "
-                >
-                  {children}
-                </motion.h2>,
-              }}
-            />
-            <PrismicRichText field={slice.primary.description}
-              components={{
-                paragraph: ({ children }) => <motion.p
-                  // variants={fadeInAnimationsVariants2}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{
-                    once: true,
-                  }}
-                  className="text-[#7c8587] max-[768px]:px-4 max-[768px]:text-center"
-                >
-                  {children}
-                </motion.p>,
-              }}
-            />
-            <div className="mt-8 flex max-[477px]:flex-col items-center gap-10 ">
-              <div className="flex justify-center items-center gap-2 ">
-                <Number n={9} />
-                <span>
-                  <PrismicRichText field={slice.primary.paragraph_2} />
-                </span>
-              </div>
-              <div className="flex justify-center items-center gap-2 ">
-                <Number n={50} />
-                <span>
-                  <PrismicRichText field={slice.primary.paragraph_3} />
-                </span>
-              </div>
-            </div>
-            <div className="flex mt-8 ">
-              <Link
-                href="https://github.com/eric-colday"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Github"
-                className="cursor-pointer mr-6 p-2 border rounded-full border-[#7c8587] hover:border-[#468bff] hover:text-[#468bff] transition-all duration-300 ease-in-out"
-              >
-                <GitHubIcon />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/ecnoubissi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="cursor-pointer p-2 border rounded-full border-[#7c8587] hover:border-[#468bff] hover:text-[#468bff] transition-all duration-300 ease-in-out"
-              >
-                <LinkedInIcon />
-              </Link>
-            </div>
-            <PrismicNextLink field={slice.primary.button_link}
-              className="mt-8 max-[812px]:flex justify-center items-center"
-            >
-              <button className="w-56 h-16 cursor-pointer border border-[#7c8587] hover:border-2 transition-all duration-300 ease-in-out">
-                <>{slice.primary.button_text}</>
-              </button>
-            </PrismicNextLink>
-          </div> */}
         </div>
       </motion.div>
     </section>

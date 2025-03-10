@@ -11,7 +11,7 @@ export default async function Page({ searchParams }) {
   const { cat } = searchParams;
 
   return (
-    <main className="border-b border-[#7c8587] ">
+    <main className="border-b border-[#7c8587] "> 
       <div className=" h-full px-10 py-36 ">
         <div className="flex flex-col items-center">
           <h1 className="text-[50px] font-extrabold text-[#7c8587] max-[425px]:text-[35px] capitalize ">

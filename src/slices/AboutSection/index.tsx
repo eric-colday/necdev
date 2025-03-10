@@ -146,7 +146,7 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
             }}
             className="text-4xl font-bold max-[425px]:text-[25px] "
           >
-            Expert en acquisition des leads sur les leviers SEO et SEA
+            Consultant en acquisition SEO et SEA
           </motion.h3>
           <motion.p
             variants={fadeInAnimationsVariants3}
@@ -159,7 +159,7 @@ const AboutSection = ({ slice }: AboutSectionProps): JSX.Element => {
           >
             Depuis 2016, j’ai dirigé et optimisé plus de 50 projets pour des entreprises diverses,
             allant de la création de sites web à leur optimisation via les leviers d’acquisition
-            SEO et le SEA. Chaque projet a affiné mes stratégies pour offrir des solutions
+            SEO et SEA. Chaque projet a affiné mes stratégies pour offrir des solutions
             sur mesure adaptées aux besoins uniques de mes clients.
           </motion.p>
           <div className="mt-8 flex max-[477px]:flex-col items-center gap-10">
