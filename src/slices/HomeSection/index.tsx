@@ -118,7 +118,7 @@ const HomeSection = ({ slice }: HomeSectionProps): JSX.Element => {
             {/* DESC */}
             <p className="md:text-xl">
               Découvrez mon univers digital, où SEO, SEA et développement web façonnent des stratégies sur mesure.
-              Alliant créativité et expertise technique, je m’engage à concevoir des projets uniques qui maximisent la visibilité en ligne et reflètent l’excellence pour chaque client.
+              Alliant créativité et expertise technique, je m’engage à concevoir des projets uniques, axés sur la performance et les résultats concrets, maximisant la visibilité en ligne et reflétant l’excellence pour chaque client.
             </p>
             {/* SKILLS CONTAINER */}
             <div className="flex flex-col gap-4 justify-center ">
