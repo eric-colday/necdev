@@ -119,7 +119,7 @@ const ServiceList = ({ slice }: ServiceListProps): JSX.Element => {
         <div className="relative">
           <Link
             href="/realisations"
-            className="border w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="border w-16 h-16 md:w-28 md:h-28 absolute top-[70px] left-[-34px] right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
           >
             Ici
           </Link>

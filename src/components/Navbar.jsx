@@ -8,9 +8,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const links = [
-  // { url: "/", title: "Accueil" },
+  { url: "/", title: "Accueil" },
   { url: "/qui-suis-je", title: "Qui suis-je ?" },
-  { url: "/services", title: "Projets" },
+  { url: "/projets", title: "Projets" },
   { url: "/realisations", title: "Realisations" },
   { url: "/contact", title: "Contact" },
 ];

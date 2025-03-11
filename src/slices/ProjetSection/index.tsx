@@ -43,7 +43,7 @@ const ProjetSection = ({ slice }: ProjetSectionProps): JSX.Element => {
 
   return (
     <section
-      data-slice-type={slice.slice_type}
+      data-slice-type={slice.slice_type} 
       data-slice-variation={slice.variation}
     >
       <div
